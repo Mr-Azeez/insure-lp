@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff4ff;
+    font-weight: bold;
+}
+
+
+
+button {
+    color: white;
+    border: 2px  solid white;
+    width: 140px;
+    height: 40px;
+    background: #2B253E;
+}
+
+li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+@media only screen and (min-width: 375px) {
+    .container {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .hero-bg {
+        display: inline-block;
+        width: 100%;
+        padding-block-end: none;
+    }
+
+    .hero-bg img {
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+
+    nav ul {
+        list-style: none;
+        display: none;
+    }
+
+    header {
+        display: flex;
+        width: 80%;
+        margin: 1.5em;
+    }
+
+    header a {
+        position: absolute;
+        right: 0;
+        margin-inline-end: 1.5em;
+    }
+
+    .hero-bg .show-mobile {
+        display: none;
+    }
+
+    .insurance {
+        width: 100%;
+        height: 90vh;
+        background: #2B253E;
+        color: white;
+        background-image: url("images/bg-pattern-intro-left-mobile.svg"), url("images/bg-pattern-intro-right-mobile.svg");
+        background-position: left top, right bottom;
+        background-repeat: no-repeat;
+        margin: 0;
+        border: 0;
+    }
+
+    .insurance article {
+        width: 90%;
+        line-height: 1;
+        margin-inline: auto;
+    }
+
+    .insurance p {
+        line-height: 1.5;
+        width: 70%;
+        margin-inline: auto;
+    }
+
+    .insurance span {
+        display: block;
+    }
+
+    .insurance h1 {
+        padding-block: 2rem 0em;
+        font-size: 4em;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .different h2, h3 {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .different h2 {
+        font-size: 4em;
+        padding-block-start: 0rem;
+    }
+
+    .different div {
+        background-color: #bf00ff6b;
+        width: 40%;
+        height: 1px;
+        margin-inline: auto;
+        margin-block-start: 7rem;
+    }
+
+    .different li h3 {
+        font-size: 2em;
+    }
+
+    .work {
+        background: #2B253E;
+        width: 80%;
+        height: 60vh;
+        margin-inline: auto;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        background-image: url("images/bg-pattern-how-we-work-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        
+    }
+
+    .work h2 {
+        padding-block-start: 2em;
+    }
+
+    .work button {
+        margin-block-end: 3em;
+    }
+
+    .link-class {
+        width: 60%;
+        margin-inline: auto;
+        height: 800px;
+    }
+
+    .icons-sec .logo-div {
+        width: 80%;
+        height: 30vh;
+        margin-inline: auto;
+        background-image: url("images/bg-pattern-footer-mobile.svg");
+        background-repeat: no-repeat;
+    }
+
+    .icons-sec .company-logo {
+        display: block;
+        margin-inline: auto;
+        padding-block: 2em;
+    }
+
+    .icons-sec .logo-div a {
+        padding-inline: 0.5em;
+    }
+
+    .logo-div .line-div {
+        background-color: #bf00ff6b;
+        width: 90%;
+        height: 1px;
+        margin-inline: auto;
+        margin-block-start: 5rem;
+    }
+
+    .icons-sec ul a {
+        text-decoration: none;
+        font-size: 1em;
+        line-height: 2;
+        text-transform: uppercase;
+        color: #4E4D54;
+        font-weight: bold;
+    }
+
+    .icons-sec ul a:nth-child(1) {
+        color: #BCBBBF;
+        line-height: 4;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .show-mobile {
+        display: none;
+    }
+
+    nav ul {
+    display: block;
+    }
+
+    nav ul div {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}

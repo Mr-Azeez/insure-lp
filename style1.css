@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-size: 16px;
+    background-color: #fff4ff;
+    color: #4e4d54;
+    margin-inline: auto;
+}
+
+.btn {
+    background-color: #fff4ff;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.7;
+}
+
+nav {
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 90vw;
+    margin-inline: auto;
+    height: 10vh;
+    z-index: 100;
+    background-color: #fff4ff;
+}
+
+nav .image-wrapper {
+    padding-block: 25px;
+    align-items: center;
+}
+
+nav .hamburger {
+    display: none;
+}
+
+ nav .hamburger:focus {
+    outline: none;
+}
+
+nav .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-inline-start: 540px;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li .btn {
+    background-color: #fff4ff;
+    color: #2F2F31;
+    height: 10px;
+    width: 100px;
+    border: 2px solid #2B2B2D;
+    padding-inline: 25px;
+    padding-block: 10px;
+}
+
+nav ul li .btn:hover {
+    background-color: #28252C;
+    color: #fff;
+}
+
+nav li a {
+    text-transform: uppercase;
+    color: #704c83;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    color: #18181a;
+    transition: color 300ms ease-in-out;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+header div {
+    flex: 1;
+}
+
+header {
+    background-color: #2C2640;
+    color: #fff;
+    padding: 100px 0;
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 250px;
+}
+
+header * {
+    z-index: 1;
+}
+
+header::after {
+    content: '';
+    background-image: url('./images/bg-pattern-intro-right-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 2;
+}
+
+header::before {
+    content: '';
+    background-image: url('./images/bg-pattern-intro-left-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.image-div {
+    max-width: 100%;
+    margin-bottom: -250px;
+}
+
+header .hero-bg {
+    align-items: center;
+    padding-block: 20px;
+    padding-inline: 70px;
+}
+
+header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 4em;
+    line-height: 1;
+}
+
+header p {
+    font-family: 'Karla', sans-serif;
+}
+
+header .btn {
+    height: 40px;
+    width: 150px;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: #2C2640;
+    margin-block: 25px;
+}
+
+header .btn:hover {
+    background-color: #fff;
+    color: #2C2640;
+    transition: color 300ms ease-in-out;
+}
+
+main {
+    width: 80%;
+    margin-inline: auto;
+    padding: 100px;
+}
+
+main .h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+    padding-block-end: 70px;
+    color: #2B282F;
+}
+
+main ul {
+    display: flex;
+}
+
+main ul .icon-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+    margin-block: 30px;
+    color: #2B282F;
+}
+
+main ul li {
+    width: 30%;
+    padding-inline: 20px;
+    font-family: 'Karla', sans-serif;
+    color: #656366;
+}
+
+.sec-1 {
+    display: flex;
+    background-color: #2C2640;
+    color: #fff4ff;
+    width: 80%;
+    margin-inline: auto;
+    height: 250px;
+    background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.sec-1 .h1 {
+    width: 50%;
+    font-size: 3em;
+    font-family: 'DM Serif Display', serif;
+    font-weight: bold;
+    padding: 50px;
+    margin-inline-start: 30px;
+}
+
+.sec-1  .btn {
+    width: 150px;
+    height: 40px;
+    margin-block: 100px;
+    margin-inline: 170px 0px;
+    background-color: #2B253E;
+    color: #fff4ff;
+    border: 1px #fff4ff solid;
+}
+
+.sec-1 .btn:hover {
+    border: none;
+    color: #2B253E;
+    background-color: #fff4ff;
+    transition: background-color 500ms ease-in-out;
+}
+
+footer {
+    background-color: #faebd780;
+    margin-block-start: 150px;
+    background-image: url(./images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+footer .footer-sec-1 {
+    display: flex;
+    width: 80%;
+    margin-inline: auto;
+    padding-block: 50px;
+}
+
+footer .footer-sec-1 .second-div {
+    padding-inline-start: 70%;
+}
+
+footer .footer-sec-1 .second-div img {
+    cursor: pointer;
+    padding-inline: 5px;
+}
+
+/* footer .footer-sec-1 .second-div img:hover {
+    background-color: #2d2640;
+    color: #ffffff;
+    background-clip: content-box;
+} */
+
+footer .footer-sec-2 {
+    display: flex;
+    width: 80%;
+    padding-block: 40px;
+    padding-inline-start: 55px;
+}
+
+footer .footer-sec-2 ul {
+    padding-inline: 70px;
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+}
+
+footer .footer-sec-2 ul li {
+    padding-block: 5px;
+}
+
+footer .footer-sec-2 ul li a {
+    color: #32303D
+}
+
+footer .footer-sec-2 ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .footer-sec-2 ul .first-child {
+    margin-block: 20px;
+    color: #838184;
+}
